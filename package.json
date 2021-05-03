@@ -4,15 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "android.browserstack.app": "./node_modules/.bin/wdio ./config/browserstack/wdio.android.bs.app.conf.js",
-    "android.sauce.rdc.app": "./node_modules/.bin/wdio ./config/saucelabs/wdio.android.rdc.app.conf.js",
-    "android.app": "./node_modules/.bin/wdio ./config/wdio.android.app.conf.js",
-    "android.browser": "./node_modules/.bin/wdio ./config/wdio.android.browser.conf.js",
-    "ios.app": "./node_modules/.bin/wdio ./config/wdio.ios.app.conf.js",
-    "ios.sauce.rdc.app": "./node_modules/.bin/wdio ./config/saucelabs/wdio.ios.rdc.app.conf.js",
-    "ios.browserstack.app": "./node_modules/.bin/wdio ./config/browserstack/wdio.ios.bs.app.conf.js",
-    "ios.browser": "./node_modules/.bin/wdio ./config/wdio.ios.browser.conf.js",
-    "lint": "eslint config tests"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "WebdriverIO",
@@ -24,11 +16,8 @@
     "ios"
   ],
   "author": "Andrew Dinh",
-  "license": "MIT",
-  "dependencies": {},
+  "license": "ISC",
   "devDependencies": {
-    "@wdio/mocha-framework": "^7.5.3",
-    "@wdio/selenium-standalone-service": "^7.5.3",
     "@babel/cli": "^7.10.4",
     "@babel/core": "^7.10.4",
     "@babel/preset-env": "^7.10.4",
