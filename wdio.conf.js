@@ -7,6 +7,7 @@ exports.config = {
     // WebdriverIO allows it to run your tests in arbitrary locations (e.g. locally or
     // on a remote machine).
     runner: 'local',
+    port: 4723,
     //
     // ==================
     // Specify Test Files
@@ -24,7 +25,8 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-        './test/specs/**/*.js'
+        // './test/specs/**/*.js'
+        './test/specs/**/sample.test.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -53,14 +55,17 @@ exports.config = {
     // https://docs.saucelabs.com/reference/platforms-configurator
     //
     capabilities: [{
-    
+        platformName: 'Android',
+        'appium:deviceName': 'Pixel3a_XL_API_30',
+        'appium:app': '/Users/anhbamuoi/Code/appiumJS/ApiDemos-debug.apk',
+        'appium:automationName': 'UiAutomator2',
         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
         // grid with only 5 firefox instances available you can make sure that not more than
         // 5 instances get started at a time.
-        maxInstances: 5,
+        // maxInstances: 5,
         //
-        browserName: 'chrome',
-        acceptInsecureCerts: true
+        // browserName: 'chrome',
+        // acceptInsecureCerts: true
         // If outputDir is provided WebdriverIO can capture driver session logs
         // it is possible to configure which logTypes to include/exclude.
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
