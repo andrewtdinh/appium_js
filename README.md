@@ -1,1 +1,1 @@
-# appium_js
+# A Sample Appium Test Repo
