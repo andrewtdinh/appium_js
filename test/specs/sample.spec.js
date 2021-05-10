@@ -1,5 +1,4 @@
 describe('Sample', () => {
   it('Test', () => {
-    
   })
 })
