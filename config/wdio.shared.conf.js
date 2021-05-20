@@ -24,22 +24,35 @@ exports.config = {
     // ====================
     // Appium Configuration
     // ====================
-    services: [
-        [
-            'appium',
-            {
-            // For options see
-            // https://github.com/webdriverio/webdriverio/tree/master/packages/wdio-appium-service
-                args: {
-                    // Auto download ChromeDriver
-                    relaxedSecurity: true,
-                    // chromedriverAutodownload: true,
-                    // For more arguments see
-                    // https://github.com/webdriverio/webdriverio/tree/master/packages/wdio-appium-service
-                },
-                command: 'appium',
-            },
-        ],
-    ],
+    // services: [
+    //     [
+    //         'appium',
+    //         {
+    //         // For options see
+    //         // https://github.com/webdriverio/webdriverio/tree/master/packages/wdio-appium-service
+    //             args: {
+    //                 // Auto download ChromeDriver
+    //                 relaxedSecurity: true,
+    //                 // chromedriverAutodownload: true,
+    //                 // For more arguments see
+    //                 // https://github.com/webdriverio/webdriverio/tree/master/packages/wdio-appium-service
+    //             },
+    //             command: 'appium',
+    //         },
+    //     ],
+    // ],
+    services: ['selenium-standalone'],
+    // services: [
+    //   ['appium', { 
+    //     command: 'appium',
+    //     args: {
+    //       platformName: 'Android',
+    //       deviceName: 'Pixel3a_XL_API_30',
+    //       // app: join(process.cwd(), './ApiDemos-debug.apk'),
+    //       automationName: 'Appium',
+    //       platformVersion: '11.0'
+    //     } 
+    //   }]
+    // ],
     port: 4723,
 };

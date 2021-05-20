@@ -5,17 +5,18 @@ exports.config = {
     port: 4723,
     specs: [
         // './test/specs/**/*.js'
-        './tests/specs/**/sample.spec.js'
+        './tests/specs/**/browser.checkbox.spec.js',
     ],
     exclude: [],
-    maxInstances: 10,
+    maxInstances: 1,
     capabilities: [{
         platformName: 'Android',
-        deviceName: 'Pixel3a_XL_API_30',
-        app: join(process.cwd(), './ApiDemos-debug.apk'),
-        automationName: 'UiAutomator2',
+        browserName: 'chrome',
+        'appium:deviceName': 'Pixel3a_XL_API_30',
+        // app: join(process.cwd(), './ApiDemos-debug.apk'),
+        'appium:automationName': 'UiAutomator2',
         // automationName: 'Appium',  // This also works instead of 'UiAutomator2'
-        platformVersion: '11.0',
+        'appium:platformVersion': '11.0',
         path: '/wd/hub'
     }],
     logLevel: 'info',
